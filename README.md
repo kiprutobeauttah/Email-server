@@ -188,4 +188,17 @@ This is a development tool. Do not use in production environments without proper
 
 ---
 
-Made with ❤️ by kiprutobeauttah
+<div align="center">
+  
+### 💻 Written by
+  
+<h1>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Beauttah;Kipruto+Beauttah;Full+Stack+Developer" alt="Beauttah" />
+</h1>
+
+[![GitHub](https://img.shields.io/badge/GitHub-kiprutobeauttah-181717?style=for-the-badge&logo=github)](https://github.com/kiprutobeauttah)
+[![Email](https://img.shields.io/badge/Email-kiprutobeauttah%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kiprutobeauttah@gmail.com)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=Made%20with%20❤️&fontSize=20&fontColor=fff&animation=twinkling" width="100%"/>
+
+</div>
