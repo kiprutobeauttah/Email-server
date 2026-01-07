@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python Email Server with GUI - Send and receive emails locally or via SMTP">
+    <meta name="author" content="Kipruto Beauttah">
+    <meta name="keywords" content="python, email server, smtp, gui, tkinter, aiosmtpd">
+    <title>Python Email Server | By Beauttah</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-envelope"></i>
+                <span>Email Server</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#docs">Documentation</a></li>
+                <li><a href="https://github.com/kiprutobeauttah/Email-server" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Python Email Server</span>
+                    <br>with GUI
+                </h1>
+                <p class="hero-subtitle">
+                    A full-featured SMTP email server for sending real emails and testing locally
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/kiprutobeauttah/Email-server/archive/refs/heads/main.zip" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                    <a href="https://github.com/kiprutobeauttah/Email-server" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="badges">
+                    <img src="https://img.shields.io/badge/Python-3.7%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Version">
+                    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
+                    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue?style=flat-square" alt="Platform">
+                    <img src="https://img.shields.io/github/stars/kiprutobeauttah/Email-server?style=social" alt="GitHub Stars">
+                </div>
+            </div>
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="prompt">$</span> git clone https://github.com/kiprutobeauttah/Email-server.git</p>
+                    <p><span class="prompt">$</span> cd Email-server</p>
+                    <p><span class="prompt">$</span> pip install -r requirements.txt</p>
+                    <p><span class="prompt">$</span> python main.py</p>
+                    <p style="color: #4ec9b0;">✓ Email Server Started Successfully!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Three Operating Modes</h3>
+                    <p>Local testing, direct send without auth, or authenticated SMTP via Gmail/Outlook</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Send Real Emails</h3>
+                    <p>Deliver emails to Gmail, Yahoo, Outlook, and any email provider worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                    <h3>File Attachments</h3>
+                    <p>Attach multiple files to your emails with full MIME support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Multiple Recipients</h3>
+                    <p>Send to multiple recipients using To, CC, and BCC fields</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <h3>Inbox Management</h3>
+                    <p>View, clear, and refresh received emails with an intuitive interface</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Email Validation</h3>
+                    <p>Automatic validation of email formats and SMTP connection testing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title">Quick Installation</h2>
+            <div class="code-block">
+                <code># Clone the repository</code><br>
+                <code>git clone https://github.com/kiprutobeauttah/Email-server.git</code><br>
+                <code>cd Email-server</code><br><br>
+                <code># Install dependencies</code><br>
+                <code>pip install -r requirements.txt</code><br><br>
+                <code># Run the application</code><br>
+                <code>python main.py</code>
+            </div>
+            
+            <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Requirements</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>✓ Python 3.7 or higher</li>
+                <li>✓ tkinter (usually included with Python)</li>
+                <li>✓ aiosmtpd >= 1.4.4</li>
+                <li>✓ dnspython >= 2.3.0</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="features">
+        <div class="container">
+            <h2 class="section-title">How to Use</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-server"></i> Server Tab</h3>
+                    <p>Start the local SMTP server to receive emails. Configure host and port, then click "Start Server" to begin receiving.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-paper-plane"></i> Send Email Tab</h3>
+                    <p>Choose your mode (Local, Direct, or Gmail SMTP), compose your email, add attachments, and send.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-inbox"></i> Inbox Tab</h3>
+                    <p>View all received emails, click to read full content, refresh the list, or clear all messages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="docs" class="installation">
+        <div class="container">
+            <h2 class="section-title">Documentation</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><i class="fas fa-book"></i> User Guide</h3>
+                    <p>Complete guide on using all features of the email server</p>
+                    <a href="https://github.com/kiprutobeauttah/Email-server#readme" style="color: var(--primary-color);">Read More →</a>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-code"></i> API Reference</h3>
+                    <p>Technical documentation for developers and contributors</p>
+                    <a href="https://github.com/kiprutobeauttah/Email-server/tree/main/src" style="color: var(--primary-color);">View Code →</a>
+                </div>
+                <div class="feature-card">
+                    <h3><i class="fas fa-question-circle"></i> FAQ</h3>
+                    <p>Common questions and troubleshooting tips</p>
+                    <a href="https://github.com/kiprutobeauttah/Email-server/issues" style="color: var(--primary-color);">Get Help →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Python Email Server</h3>
+                <p>Built with ❤️ by Kipruto Beauttah</p>
+                <div class="social-links">
+                    <a href="https://github.com/kiprutobeauttah" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/kiprutobeauttah" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:kiprutobeauttah@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p style="opacity: 0.7; margin-top: 2rem;">
+                © 2026 Kipruto Beauttah. Licensed under MIT License.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
