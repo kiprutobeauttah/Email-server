@@ -1,8 +1,14 @@
 # Python Email Server with GUI
 
+![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
 A full-featured SMTP email server with GUI for sending real emails and testing locally.
 
-## Features
+## ✨ Features
 
 - **Dual Mode Operation**
   - **Local Mode** - Test emails locally without internet
@@ -17,36 +23,55 @@ A full-featured SMTP email server with GUI for sending real emails and testing l
 - **Email Validation** - Validates email format before sending
 - **Connection Testing** - Test SMTP settings before sending
 
-## Requirements
+## 🚀 Quick Start
 
-- Python 3.7+
-- tkinter (usually included with Python)
-- aiosmtpd
-
-## Installation
-
-1. Install dependencies:
 ```bash
+# Clone the repository
+git clone https://github.com/kiprutobeauttah/Email-server.git
+cd Email-server
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the application
+python main.py
 ```
 
-## Usage
+## 📦 Installation
 
-### Start the Application
+## 📁 Project Structure
 
-```bash
-python email_server.py
+```
+Email-server/
+├── main.py                 # Application entry point
+├── src/
+│   ├── __init__.py
+│   ├── email_handler.py    # Incoming email handler
+│   ├── server_manager.py   # SMTP server management
+│   ├── smtp_sender.py      # Email sending logic
+│   ├── validators.py       # Input validation
+│   └── gui/
+│       ├── __init__.py
+│       ├── main_window.py  # Main GUI window
+│       ├── server_tab.py   # Server control tab
+│       ├── send_tab.py     # Send email tab
+│       └── inbox_tab.py    # Inbox tab
+├── requirements.txt        # Python dependencies
+├── .gitignore
+└── README.md
 ```
 
-### Using the GUI
+## 🔧 Usage
 
-1. **Server Tab** (for receiving emails locally)
+## 💡 Usage Examples
+
+### 1. **Server Tab** (for receiving emails locally)
    - Enter host (default: localhost) and port (default: 1025)
    - Click "Start Server" to begin receiving emails
    - Monitor incoming emails in the server log
    - Click "Stop Server" to stop receiving emails
 
-2. **Send Email Tab**
+### 2. **Send Email Tab**
    
    **SMTP Configuration:**
    - **Local Mode** - Send to your local server for testing
@@ -62,14 +87,14 @@ python email_server.py
    - Multiple recipients supported (comma-separated)
    - Click "Send Email" to send
 
-3. **Inbox Tab**
+### 3. **Inbox Tab**
    - View all received emails in the list
    - Click on an email to view its full content
    - Use "Refresh" to update the display
    - Use "Clear Inbox" to delete all emails
    - Email counter shows total received emails
 
-## Usage Examples
+## 📝 Usage Examples
 
 ### Local Testing
 1. Start the server using the "Server" tab
@@ -77,7 +102,9 @@ python email_server.py
 3. Send a test email
 4. Check the "Inbox" tab to see the received email
 
-### Sending Real Emails (Gmail)
+## ⚙️ Configuration
+
+### Gmail SMTP Setup
 1. **Setup Gmail App Password:**
    - Go to myaccount.google.com/apppasswords
    - Enable 2-Factor Authentication if not already enabled
@@ -99,23 +126,66 @@ python email_server.py
    - Click "Send Email"
    - Email will be delivered to the real recipient!
 
-## Improvements Over Original
+## 🛠️ Technologies Used
 
-- Uses modern `aiosmtpd` instead of deprecated `smtpd`/`asyncore`
-- Proper server start/stop functionality
-- Email format validation
-- Port number validation
-- Connection timeout handling
-- Better error messages
-- Inbox management (clear, refresh, counter)
-- Timestamps in server log
-- Thread-safe GUI updates
-- Handles multipart emails correctly
+- **Python 3.7+** - Core programming language
+- **tkinter** - GUI framework
+- **aiosmtpd** - Async SMTP server
+- **dnspython** - DNS resolution for direct sending
+- **smtplib** - SMTP client
 
-## Notes
+## 🤝 Contributing
 
-- This is a development server - not for production use
-- Emails are only stored in memory (lost when app closes)
-- Port 1025 is used to avoid requiring admin privileges
-- Server runs in a background thread
-- No authentication required (development only)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👤 Author
+
+**kiprutobeauttah**
+
+- GitHub: [@kiprutobeauttah](https://github.com/kiprutobeauttah)
+- Email: kiprutobeauttah@gmail.com
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📸 Screenshots
+
+### Server Tab
+![Server Tab](https://via.placeholder.com/800x400?text=Server+Tab+Screenshot)
+
+### Send Email Tab
+![Send Email Tab](https://via.placeholder.com/800x400?text=Send+Email+Tab+Screenshot)
+
+### Inbox Tab
+![Inbox Tab](https://via.placeholder.com/800x400?text=Inbox+Tab+Screenshot)
+
+## ⚠️ Disclaimer
+
+This is a development tool. Do not use in production environments without proper security measures.
+
+## 🐛 Known Issues
+
+- Direct send mode may not work if ISP blocks port 25
+- Some email providers may reject unauthenticated emails
+- Emails sent via direct mode often end up in spam
+
+## 📚 Resources
+
+- [Gmail App Passwords](https://myaccount.google.com/apppasswords)
+- [SMTP Protocol](https://tools.ietf.org/html/rfc5321)
+- [aiosmtpd Documentation](https://aiosmtpd.readthedocs.io/)
+
+---
+
+Made with ❤️ by kiprutobeauttah
